@@ -1,0 +1,1 @@
+CUDA_VISIBLE_DEVICES=2 python run.py --config ./flower_config.py --run_name 'sde-flower'
