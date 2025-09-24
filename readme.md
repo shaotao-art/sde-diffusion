@@ -13,7 +13,7 @@ we call $f$ the drift term, and $g$ the diffusion term.
 we use marginal prob to add noise at one time
 
 $$
-q_t(x_t|x_0) = N(x(t);\gamma_tx_0, \sigma_t^2I)
+q_t(x_t|x_0) = N(x(t); \gamma_tx_0, \sigma_t^2I)
 $$
 
 $\gamma_t, \sigma_t^2$ has close form solution w.r.t $f, g$
@@ -49,7 +49,7 @@ $$
 marginal prob for add noise
 
 $$
-q_t(x_t|x_0) = N(x(t);\gamma_tx_0, \sigma_t^2I)\\\gamma_t=e^{-\frac{1}{2}\int_0^t \beta(s)ds}\\\sigma_t^2=1-e^{-\int_0^t \beta(s)ds}
+q_t(x_t|x_0) = N(x(t);\gamma_tx_0, \sigma_t^2I), \gamma_t=e^{-\frac{1}{2}\int_0^t \beta(s)ds}, \sigma_t^2=1-e^{-\int_0^t \beta(s)ds}
 $$
 
 reverse process for sampling
